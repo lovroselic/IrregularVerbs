@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+h1 {
+    font-family: 'Tangerine', serif !important;
+    font-size: 48px;
+}
+
+.win,
+.winTrans {
+    width: 95%;
+    text-align: center;
+    padding: 4px 10px 10px;
+    clear: both;
+}
+
+#setup {
+    font-size: 18px
+}
+
+#setup fieldset {
+    border: 2px #AAA ridge;
+    border-radius: 7px !important;
+    width: 450px;
+    padding: 20px
+}
+
+#check {
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 10px;
+    outline-style: none;
+    box-shadow: 2px 2px 0 #555;
+    cursor: pointer
+}
+
+#buttons {
+    display: none
+}
+
+#start {
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 10px;
+    outline-style: none;
+    box-shadow: 2px 2px 0 #444;
+    cursor: pointer
+}
+
+#board {
+    margin: auto;
+    width: 900px;
+    background-color: #FFAD5C;
+    background: -webkit-linear-gradient(90deg, #FFAD5C, #FFCC80);
+    background: -o-linear-gradient(90deg, #FFAD5C, #FFCC80);
+    background: -moz-linear-gradient(90deg, #FFAD5C, #FFCC80);
+    background: -ms-linear-gradient(90deg, #FFAD5C, #FFCC80);
+    background: linear-gradient(90deg, #FFAD5C, #FFCC80);
+    display: none;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#board table {
+    width: 900px;
+    border-collapse: collapse;
+    table-layout: fixed
+}
+
+#board table thead td {
+    background: #F60;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px
+}
+
+#board table td {
+    padding: 10px;
+    font-size: 18px
+}
+
+.col1 {
+    width: 10%
+}
+
+.col2 {
+    width: 30%
+}
+
+input[type=text].fill {
+    background-color: #EEE;
+    border: solid 1px #DDD;
+    color: #000;
+    height: 30px;
+    padding-left: 10px;
+    width: 191px;
+    box-shadow: 2px 2px 0 #828181 inset;
+    font-size: 16px
+}
+
+.wrong {
+    color: red;
+    text-decoration: line-through
+}
+
+.right {
+    color: green
+}
+
+.shouldbe {
+    color: blue;
+    font-weight: bold
+}
+
+#result {
+    font-weight: bold;
+    font-size: 24px
+}
+
+#window {
+    display: none
+}
+
+/********** ExtraLarge devices only **********/
+@media (min-width: 1200px) {
+    #start {
+        position: relative;
+        left: 60px;
+        top: -30px;
+    }
+}
+
+/********** Large devices only **********/
+@media (min-width: 1048px) and (max-width: 1199px) {
+    #start {
+        position: relative;
+        left: 60px;
+        top: -30px;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1047px) {
+    #start {
+        font-size: 16px;
+        margin-left: 8px;
+    }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    #start {
+        font-size: 16px;
+        margin-left: 8px;
+    }
+
+    #board {
+        width: 98%
+    }
+
+    #board table {
+        width: 100%;
+    }
+}
+
+/********** Extra small devices only **********/
+@media (min-width:480px) and (max-width: 767px) {
+    #setup fieldset {
+        border-radius: 10px;
+        width: 95%;
+        padding: 2px;
+        height: 100px;
+    }
+
+    #start {
+        font-size: 12px;
+        margin-left: 8px;
+    }
+
+    #setup {
+        font-size: 12px;
+    }
+
+    #board {
+        width: 98%
+    }
+
+    #board table {
+        width: 100%;
+    }
+
+    #board table thead td {
+        font-size: 14px;
+        padding: 2px
+    }
+
+    #board table td {
+        padding: 2px;
+        font-size: 12px
+    }
+
+    input[type=text].fill {
+        height: 25px;
+        padding-left: 10px;
+        width: 66%;
+        font-size: 12px
+    }
+}
+
+/********** Ultra small devices only **********/
+@media (max-width: 479px) {
+    #setup fieldset {
+        border-radius: 10px;
+        width: 95%;
+        padding: 2px;
+        height: 100px;
+    }
+
+    #start {
+        font-size: 12px;
+        margin-left: 8px;
+    }
+
+    #setup {
+        font-size: 12px;
+    }
+
+    #board {
+        width: 98%
+    }
+
+    #board table {
+        width: 100%;
+    }
+
+    #board table thead td {
+        font-size: 12px;
+        padding: 2px
+    }
+
+    #board table td {
+        padding: 2px;
+        font-size: 10px
+    }
+
+    input[type=text].fill {
+        height: 22px;
+        padding-left: 5px;
+        width: 66%;
+        font-size: 10px
+    }
+
+}
